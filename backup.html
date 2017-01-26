@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- Include the jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <style type="text/css">
+  #d1
+{
+   background-color: black;
+   width: 100%;
+   height: 22%;
+   color: white;
+   FONT-FAMILY:GEORGIA;
+}
+.cul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.cli
+{
+    float: right;
+}
+.ca 
+{
+    text-align:center;
+margin-top: 1px;    
+ 
+    display: block;
+    text-decoration: none;
+    color: lightcyan;
+    width: 150px;
+    text-transform: capitalize;
+}
+.ca:hover 
+{
+    font-size: 1.3em;    
+    background-color:#B2D1D1;
+    color:#005252;
+    border: 2px groove CYAN;
+BORDER-RADIUS:3PX;
+}
+#d2
+{
+    text-shadow: 3px 3px 1px orange;
+    background-color: grey;
+    width:20%;
+    color: white; 
+    text-align: left; 
+    margin: 15px;
+    font-size:20px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s, transform 2s;
+    BORDER-RADIUS:3PX;
+}
+
+div#d2:hover
+{
+    transform: rotate(360deg);
+    color: white;
+    text-shadow: 2px 2px 3px linen;
+    background:#FF6600; width:20%;
+
+}
+#d3
+{
+    float: left;
+    position:absolute;
+    width:65em;
+    top: 60%;
+    left: 50%;
+    margin-top: -12em; /*set to a negative number 1/2 of your height*/
+    margin-left: -24em; /*set to a negative number 1/2 of your width*/
+
+    height:30em;
+  
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    border:4px groove pink;
+}
+.c1
+{     
+    height:50%;
+    width:50%;
+    margin:50px; 
+    transition: width 2s, height 2s, transform 2s;
+}
+.c1:hover
+{  
+    transform: scale(1.2,1.2); 
+    border:3px groove purple;
+}
+ 
+#q1
+{
+    text-align: center;
+    font: 30px forte, serif;        
+    background-color: #ffffff;
+    border: 1px black;
+}
+
+#d4
+{
+    overflow: auto;
+    text-transform: uppercase;
+    float: left;    
+    font: bold 30px arial, serif;
+    height: 30em;
+    width: 10em; 
+    color: red;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px solid;
+}
+#pic
+{
+
+opacity:0.3;
+}
+
+
+
+
+#example {
+    background-image: url(img_flwr.gif), url(a5.jpg);
+ background-size:cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+.ccp {
+    font-size: 20px;
+}
+.cca
+{
+    text-align:center;
+   float:right
+    display: block;
+    text-decoration: none;
+    color: brown;
+    width: 150px;
+    text-transform: capitalize;
+ border: 2px groove lightcyan;
+}
+.cca:hover 
+{
+    font-size: 1.3em;    
+    background-color:#B2D1D1;
+    color:#005252;
+border: 2px groove CYAN;
+BORDER-RADIUS:3PX;
+}
+.cch {
+    text-decoration: underline;
+}
+
+#example1 {
+    background-image: url(img_flwr.gif), url(MEMBER1.jpg);
+ 
+    background-repeat: no-repeat,repeat;
+    padding: 15px;
+}
+.ap {
+    font-size: 20px;
+}
+.ah{text-decoration: underline;
+}
+.aa 
+{
+    text-align:center;
+   float:right
+    display: block;
+    text-decoration: none;
+    color: brown;
+    width: 150px;
+    text-transform: capitalize;
+ border: 2px groove lightcyan;
+}
+.aa:hover 
+{
+    font-size: 1.3em;    
+    background-color:#B2D1D1;
+    color:#005252;
+border: 2px groove CYAN;
+BORDER-RADIUS:3PX;
+}
+</style>
+
+
+
+
+<script>
+function fuch1()
+{
+document.getElementById("q1").textContent = 'this is maths'
+}
+function fuch2()
+{
+document.getElementById("q1").textContent = 'this is english'
+}
+function fuch3()
+{
+document.getElementById("q1").textContent = 'This is dynamically added text'
+}
+function fuch4()
+{
+document.getElementById("q1").textContent = 'This is dynamically added text'
+}
+function fuch5()
+{
+document.getElementById("q1").textContent = 'This is dynamically added text'
+}
+function fuch6()
+{
+document.getElementById("q1").textContent = 'This is dynamically added text'
+}
+
+</script>
+
+ 
+</head>
+<body>
+
+<div data-role="page" id="home">
+  <div data-role="main" class="ui-content">
+            <div id=d1>
+            <h3><ul class = "cul">
+            <div id="d2" ><h2><b><pre>Learn and Fun</pre></h2></b></div>
+
+            <li class = "cli"><a class = "ca" href="#contact">contact us</a></li>
+            <li class = "cli"><a class = "ca" href="#about">About Us</a></li>
+            <li class = "cli"><a class = "ca" href="#product">Products</a></li>
+            <li class = "cli"><a class = "ca" href="#home">home</a></li>
+            </ul></h3>
+            </div>
+
+
+            <div id="d3">
+            <marquee behaviour="scroll">
+            <img src="book1.jpg" onclick=fuch1() id="i1" class="c1" >
+            <img src="book2.jpg" onclick=fuch2() id="i2" class="c1" >
+            <img src="book3.jpg" onclick=fuch3() id="i3" class="c1" >
+            <img src="book4.jpg" onclick=fuch4() id="i4" class="c1" >
+            <img src="book5.jpg" onclick=fuch5() id="i5" class="c1" >
+            <img src="book6.jpg" onclick=fuch6() id="i6" class="c1">
+            </marquee>
+            <div id="q1"></div>
+            </div>
+  </div>
+</div> 
+<div data-role="page" id="contact">
+  <div data-role="main" class="ui-content">
+          <div id="example">
+        <h3 align="right"><a href="#home"> GO BACK HOME</a></h3>
+        <h1 class = "cch" color="brown" text-decoration="underline" >CONTACT US</h1>
+        <p  class = "ccp" >
+        <b>Qasmiya enterprises</b>
+        </p>
+        <p  class = "ccp" >
+        Address:- Norani nagar square, near baba farid dargha, Dhar road, Indore
+        <br><br>
+        Mobile No:- +918602657911</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+
+  </div>
+</div> 
+
+<div data-role="page" id="about">
+  <div data-role="main" class="ui-content">
+            <div id="example1">
+        <h3 align="right"><a class ="aa" href="#home"> GO BACK HOME</a></h3>
+        <h1 class = "ah" align="center">ABOUT US</h1>
+              <p   class="QAMIYA21 ap"><span class="QAMIYA21">Qasmiya Enterprises is a societal marketing-driven organization led by skilled and experienced professionals from the fields of piping system, water management and renewable energy.  Shourya®-Powerful Performance is a leading brand in piping system and is the first choice of many customers attributing to its commitment to high quality andstrong brand promises. <br />
+              </span></p>
+              <p class="QAMIYA21 ap"><span class="QAMIYA21">Qasmiya Enterprises - a marketing firm of the group engaged in supply and installation of HDPE/CPVC/UPVC piping system for building,utilities, Industrial and Irrigation sectors. </span></p>
+              <p class="QAMIYA21 ap"><span class="QAMIYA21">Shourya® HDPE pipe manufacturing unit at is based at Jaipur, which is ISO 9001: 2008 certified and equipped with the modern plants &amp;machinery to produce the best of the pipes and fittings and conforming to all IS and ISO standards.<br />
+              </span></p>
+              <p class="QAMIYA21 ap"><span class="QAMIYA21">Standards: </span></p>
+              <p class="QAMIYA21 ap"><span class="QAMIYA21">Shourya® HDPE pipes are available in </span></p>
+              <p class="QAMIYA21 ap"><span class="QAMIYA21">I. IS:4984  and ISO 4427 for water supply (for portable water, Irrigation and Electrical Cable ducting) upto 315mm</span></p>
+              <p class="QAMIYA21 ap"><span class="QAMIYA21">II. IS:14333 For Sewer disposal upto 315mm </span></p>
+              <p class="QAMIYA21 ap"><span class="QAMIYA21">III. IS 14151 Part I and II for Sprinkler Piping system upto 125mm </span></p>
+              <p class="QAMIYA21 ap"><span class="QAMIYA21"><br />
+                Plant’s capacity: 4000MT PA <br />
+              </span></p>
+              <p class="QAMIYA21 ap"><span class="QAMIYA21">Quality Control/Test Lab: Accredited by BIS for all relevant IS </span></p>
+              <p class="QAMIYA21 ap"><span class="QAMIYA21">standards <br />
+              </span></p>
+              <p class="QAMIYA21 ap"><span class="QAMIYA21">Certification: ISO 9001:2008 accredited by JAS-ANZ <br />
+              </span></p>
+              <p class = "ap">Approvals/Registration:</span></p>
+              <p class="QAMIYA21 ap"><span class="QAMIYA21"> MP Deptt of Ag Engg, MP Agro, PHED Rajasthan and MNRE </span></p>
+            <p class="QAMIYA21 ap"><span class="QAMIYA21">There is a long list of our satisfied customers like PHED-Raj, Contractors of Delhi Jal Board, L&amp;T, Sterling &amp; Wilson, Acme Power are few to mention.</span></p></td>
+            <th width="17%" height="28" align="left" valign="top" nowrap="nowrap" bgcolor="#FFFFFF" class="Sideheading"><a class = "aa" href="#home" target="_self">home:-</a></th>
+          </tr>
+          <tr>
+            <td height="30" valign="top" bgcolor="#66FF33" class="Sideheading"><a class = "aa" href="#Product">Products:-</a></td>
+          </tr>
+          <tr>
+            <td height="29" valign="top" bgcolor="#66FF33" class="Sideheading"><a class = "aa" href="#contact">Contact US:-</a></td>
+          </tr>
+          <tr>
+            <td valign="top" bgcolor="#66FF33" class="Sideheading"><p><img src="images (34).jpg" width="253" height="459" alt="image" longdesc="http://image" /></p>
+            <p class ="ap"> <img src="images (33).jpg" width="255" height="360" alt="image" longdesc="http://image 2" /></p></td>
+          </tr>
+        </table>
+        </div>
+  </div>
+</div> 
+
+
+<div data-role="page" id="product">
+  <div data-role="main" class="ui-content">
+    
+  </div>
+</div> 
+
+
+</body>
+</html>
